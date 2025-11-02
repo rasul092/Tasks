@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double teref, sahe, perimetr;
+    cout << "Terefi daxil edin: ";
+    cin >> teref;
+    sahe=teref*teref;
+    perimetr=4*teref;
+    cout << "Kvadratın sahəsi: " << sahe << endl;
+    cout << "Kvadratın perimetri: " << perimetr << endl;
+    return 0;
+}
