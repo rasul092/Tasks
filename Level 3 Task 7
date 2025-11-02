@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int c=0;
+    cout << "Ededleri daxil edin: " << endl;
+
+    while (true) {
+        cin >> n;
+        if (n==0) break;
+        cem+=n;
+    }
+    cout << "Cem: " << c << endl;
+    return 0;
+}
