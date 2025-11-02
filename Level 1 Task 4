@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double r, sahe, uzunluq;
+    const double pi=3.14;
+    cout << "Dairənin radiusunu daxil edin: ";
+    cin >> r;
+    sahe = pi*r*r;  
+    uzunluq = 2*pi*r;  
+    // Nəticələri ekrana çap edirik
+    cout << "Dairənin sahəsi: " << sahe << endl;
+    cout << "Dairənin çevrəsi: " << uzunluq << endl;
+    return 0;
+}
