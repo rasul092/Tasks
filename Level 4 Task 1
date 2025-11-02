@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int s;
+    int k;
+    int t;
+
+    cin>>s;
+    for(int i=1; i<=s; i++){
+        if(i%2==0){
+            k=i*i;
+            t=t+k;
+        }
+    }
+    cout<<t;
+    return 0;
+}
