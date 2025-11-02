@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, c=0;
+    cout << "Eded daxil edin: ";
+    cin >> n;
+    if (n<1) {
+        cout << "Zehmet olmasa 1-den boyuk eded daxil edin." << endl;
+    } else {
+        for (int i=1; i<=n; i++) {
+            c+=i;
+        }
+        cout << "1-den " << n << "-e qeder ededlerin cemi: " << c << endl;
+    }
+    return 0;
+}
