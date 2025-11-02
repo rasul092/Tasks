@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double t, f, c;
+    int choice;
+    cout << "1. Selsidən Fahrenheit-ə çevirmək" << endl;
+    cout << "2. Fahrenheit-dən Selsi-yə çevirmək" << endl;
+    cout << "Seçiminizi edin: ";
+    cin >> choice;
+    if (choice==1) {
+        cout << "Selsi temperaturunu daxil edin: ";
+        cin >> t;
+        f = (t*9/5)+32;
+        cout << "Fahrenheit: " << f << endl;
+    } 
+    else if (choice==2) {
+        cout << "Fahrenheit temperaturunu daxil edin: ";
+        cin >> t;
+        c = (t-32)*5/9;
+        cout << "Selsi: " << c << endl;
+    } 
+    return 0;
+}
