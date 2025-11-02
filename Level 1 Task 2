@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b;
+    cout << "Birinci tam ədədi daxil edin: ";
+    cin >> a;
+    cout << "İkinci tam ədədi daxil edin: ";
+    cin >> b;
+    cout << "Cəm: " << a+b << endl;
+    cout << "Fərq: " << a-b << endl;
+    cout << "Hasil: " << a*b << endl;
+    if (b != 0) {
+        cout << "Bölmə: " << a/b << endl;
+    } else {
+        cout << "Sıfıra bölmə mümkün deyil!" << endl;
+    }
+    return 0;
+}
+
