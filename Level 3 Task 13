@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int eded, tersEded = 0, orijinal, qaliq;
+    cout << "Ədədi daxil edin: ";
+    cin >> eded;
+
+    orijinal = eded;
+
+    
+    while (eded != 0) {
+        qaliq = eded % 10;
+        tersEded = tersEded * 10 + qaliq;
+        eded /= 10;
+    }
+
+    cout << "Tərsinə çevrilmiş ədəd: " << tersEded << endl;
+
+   
+    if (orijinal == tersEded) {
+        cout << "Bu ədəd palindromdur." << endl;
+    } else {
+        cout << "Bu ədəd palindrom deyil." << endl;
+    }
+
+    return 0;
+}
