@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Ededi daxil edin: ";
+    cin >> n;
+
+    string binary = "";
+    if (n == 0) binary = "0";
+
+    while (n > 0) {
+        binary = char(n % 2 + '0') + binary; 
+        n /= 2;
+    }
+
+    cout << "2-lik formada: " << binary << endl;
+
+    return 0;
+}
