@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double n1, n2, n3, edediorta;
+    cout << "Birinci ədədi daxil edin: ";
+    cin >> n1;
+    cout << "İkinci ədədi daxil edin: ";
+    cin >> n2;
+    cout << "Üçüncü ədədi daxil edin: ";
+    cin >> n3;
+    edediorta= (n1+n2+n3)/3;
+    cout << "Üç ədədin ortalaması: " << edediorta << endl;
+    return 0;
+}
