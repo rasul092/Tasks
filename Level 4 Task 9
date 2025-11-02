@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "1-dən 1000-ə qədər palindrom ədədlər:\n";
+
+    for (int i = 1; i <= 1000; i++) {
+        int n = i;
+        int tersi = 0;
+
+        
+        while (n > 0) {
+            int r = n % 10;
+            tersi = tersi * 10 + r;
+            n /= 10;
+        }
+        if (i == tersi)
+            cout << i << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
