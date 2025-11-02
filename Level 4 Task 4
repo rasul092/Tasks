@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int k;
+    int s;
+    cout<<"3 reqemli eded daxil et : ";
+    cin>>s;
+    k=(s/100)+((s%10)/10)+(s%10); // Rəqəmləri cəmini hesablayır
+    if(k==10){
+        cout<<s;
+    }
+    else{
+        cout<<"reqemler cemi 10 deyil";
+    }
+    return 0;
+}
