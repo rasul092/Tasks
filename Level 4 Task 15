@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, max = 0;
+
+    while (true) {
+        cout << "Ededi daxil edin (0 = dayandır): ";
+        cin >> n;
+        if (n == 0) break;
+        if (n > max) max = n;
+    }
+
+    cout << "En boyuk eded: " << max;
+    return 0;
+}
