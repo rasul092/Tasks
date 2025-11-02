@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Neçə ədəd daxil edəcəksiniz? ";
+    cin >> n;
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        cout << i+1 << ". ədədi daxil edin: ";
+        cin >> arr[i];
+    }
+
+    int sumTek = 0, sumCut = 0;
+    for (int i = 0; i < n; i++) {
+        if (i % 2 == 0)
+            sumCut += arr[i];
+        else
+            sumTek += arr[i];
+    }
+
+    cout << "Cut indeks cemi: " << sumCut << endl;
+    cout << "Tek indeks cemi: " << sumTek << endl;
+
+    return 0;
+}
