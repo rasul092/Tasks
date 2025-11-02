@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Eded daxil edin: ";
+    cin >> n;
+    if (n<=1) {
+        cout << n << " sade eded deyil." << endl;
+    } 
+    else {
+        int i=2;
+        while (i*i<=n && n%i!=0) {
+            i++;
+        }
+        if (i*i>n)
+            cout << n << " sade ededdir." << endl;
+        else
+            cout << n << " sade eded deyil." << endl;
+    }
+    return 0;
+}
