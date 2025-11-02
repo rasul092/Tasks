@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, t=0;
+    cout << "Eded daxil edin: ";
+    cin >> n;
+    int m=abs(n);
+    while (m>0) {
+        int r=m%10;
+        t=t*10+r;
+        m/=10;
+    }
+    cout << "Ededin tersi: " << ters << endl;
+    return 0;
+}
