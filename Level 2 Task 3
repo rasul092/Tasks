@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b, c;
+    cout << "Birinci ədəd: ";
+    cin >> a;
+    cout << "İkinci ədəd: ";
+    cin >> b;
+    cout << "Üçüncü ədəd: ";
+    cin >> c;
+    if (a >= b && a >= c) {
+        cout << "Ən böyüyü: " << a << endl;
+    } else if (b >= a && b >= c) {
+        cout << "Ən böyüyü: " << b << endl;
+    } else {
+        cout << "Ən böyüyü: " << c << endl;
+    }
+    return 0;
+}
