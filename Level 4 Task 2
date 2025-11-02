@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int s=67890;
+    int k=0;
+    while(s>0){
+        s=s/10;
+        k=k+1;
+    }
+    cout<<k;
+    return 0;
+}
