@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int s;
+    int orta = 0;
+    int max = 1;
+    int min = 1;
+    cin >> s;
+
+    for (int i = 1; i <= s; i++) {
+        if (i > max) {
+            max = i;
+        }
+    }
+
+    orta = (min + max) / 2;
+    cout << "min = " << min << " max = " << max << " orta = " << orta;
+
+    return 0;
+}
