@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int bal;
+    cout << "Imtahan balini daxil edin (0-100): ";
+    cin >> bal;
+    if (bal>=0 && bal<=50) {
+        cout << "Qiymət: F" << endl;
+    } else if (bal>=51 && bal<=60) {
+        cout << "Qiymət: E" << endl;
+    } else if (bal>=61 && bal<=70) {
+        cout << "Qiymət: D" << endl;
+    } else if (bal>=71 && bal<=80) {
+        cout << "Qiymət: C" << endl;
+    } else if (bal>=81 && bal<=90) {
+        cout << "Qiymət: B" << endl;
+    } else if (bal>=91 && bal<=100) {
+        cout << "Qiymət: A" << endl;
+    }
+    return 0;
+}
