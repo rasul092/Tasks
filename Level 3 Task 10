@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N;
+    cout << "Daxil edin: ";
+    cin >> N;
+    int a=0, b=1, n;
+    for (int i=1; i<=N; i++) {
+        cout << a << " ";
+        n=a+b;
+        a=b;
+        b=n;
+    }
+    cout << endl;
+    return 0;
+
+}
