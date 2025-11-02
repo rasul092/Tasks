@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n1, n2;
+    cout << "Birinci ədədi daxil edin: ";
+    cin >> n1;
+    cout << "İkinci ədədi daxil edin: ";
+    cin >> n2;
+    if (n1>n2) {
+        cout << "Böyük ədəd: " << n1 << endl;
+    } else if (n2>n1) {
+        cout << "Böyük ədəd: " << n2 << endl;
+    } else {
+        cout << "Ədədlər bərabərdir." << endl;
+    }
+    return 0;
+}
